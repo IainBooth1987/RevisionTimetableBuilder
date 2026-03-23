@@ -2058,8 +2058,7 @@ function obSetDot(n){
 
 function obNext1(){
   const name=document.getElementById('ob-name').value.trim();
-  const year=document.getElementById('ob-year').value;
-  if(!year){showToast('Please select your year group');return;}
+  const year=document.getElementById('ob-year').value||'Year 11';
   D.studentInfo.name=name;
   D.studentInfo.academicYear=year;
   document.getElementById('ob-step-1').style.display='none';
